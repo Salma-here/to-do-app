@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    color: var(--dark-theme-very-dark-grayish-blue-1)
+}
+
+.container.light .btn.active,
+.container.dark .btn.active {
+    color: var(--primary-bright-blue);
+}
+
+.btn:hover {
+    color: var(--dark-theme-light-grayish-blue);
+}
+
+.container.light .btn,
+.container.light .number {
+    color: var(--light-theme-dark-grayish-blue);
+}
+
+.container.light .btn:hover {
+    color: var(--light-theme-very-dark-grayish-blue);
+}

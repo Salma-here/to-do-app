@@ -1,0 +1,65 @@
+.item {
+    padding: 20px;
+    border-bottom: 1px solid var(--light-theme-dark-grayish-blue);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--dark-theme-very-dark-grayish-blue-1);
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    border-color: var(--dark-theme-light-grayish-blue);
+}
+
+.item.done .box {
+    background-image: var(--primary-check-background);
+}
+
+.check {
+    width: 60%;
+    display: none;
+}
+
+.item.done .check {
+    display: block;
+}
+
+.item.done .text {
+    text-decoration: line-through;
+    color: var(--dark-theme-very-dark-grayish-blue-1);
+}
+
+.item.done.light .text {
+    color: var(--light-theme-dark-grayish-blue);
+}
+
+.cross {
+    cursor: pointer;
+    display: none;
+}
+
+.item:hover .cross {
+    display: block;
+}
+
+.cross:hover {
+    filter: invert(97%) sepia(97%) saturate(0%) hue-rotate(359deg) brightness(104%) contrast(104%);
+}

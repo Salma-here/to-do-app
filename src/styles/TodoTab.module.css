@@ -1,0 +1,19 @@
+.tab {
+    text-transform: capitalize;
+}
+
+.tab.active, .tab.light.active {
+    color: var(--primary-bright-blue);
+}
+
+.tab:hover {
+    color: var(--dark-theme-light-grayish-blue);
+}
+
+.tab.light {
+    color: var(--light-theme-dark-grayish-blue);
+}
+
+.tab.light:hover {
+    color: var(--light-theme-very-dark-grayish-blue);
+}
